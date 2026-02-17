@@ -78,8 +78,8 @@ def kontrol_et():
 
     from datetime import datetime, timedelta
 
-simdi = datetime.utcnow() + timedelta(hours=3)
-    dakika = now.hour * 60 + now.minute
+    simdi = datetime.utcnow() + timedelta(hours=3)
+    dakika = simdi.hour * 60 + simdi.minute
 
     #if not (BORSANIN_ACILISI <= dakika < BORSANIN_KAPANISI):
         #log_yaz("Borsa kapalı.")
@@ -128,5 +128,6 @@ simdi = datetime.utcnow() + timedelta(hours=3)
 if __name__ == "__main__":
 
     kontrol_et()
+
 
 

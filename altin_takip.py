@@ -98,7 +98,7 @@ def kontrol_et():
         return
 
     toplam = fiyat * GRAM_MIKTAR
-    zaman = now.strftime("%d-%m-%Y %H:%M:%S")
+    zaman = simdi.strftime("%d-%m-%Y %H:%M:%S")
 
     if onceki_fiyat:
         if fiyat > onceki_fiyat:
@@ -128,6 +128,7 @@ def kontrol_et():
 if __name__ == "__main__":
 
     kontrol_et()
+
 
 
 

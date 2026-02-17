@@ -76,7 +76,9 @@ def kontrol_et():
         log_yaz("TOKEN veya CHAT_ID tanımlı değil.")
         return
 
-    now = datetime.now()
+    from datetime import datetime, timedelta
+
+simdi = datetime.utcnow() + timedelta(hours=3)
     dakika = now.hour * 60 + now.minute
 
     #if not (BORSANIN_ACILISI <= dakika < BORSANIN_KAPANISI):
@@ -126,4 +128,5 @@ def kontrol_et():
 if __name__ == "__main__":
 
     kontrol_et()
+
 

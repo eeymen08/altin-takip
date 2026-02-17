@@ -8,8 +8,8 @@ import json
 GRAM_MIKTAR = 0.04
 URL = "https://altin.doviz.com/halkbank"
 
-TOKEN = os.environ.get("8475330105:AAGNqb6B93UJr6X5_8TEB9onDVKk3JRs6nA")
-CHAT_ID = os.environ.get("8388070696")
+TOKEN = os.environ.get("TOKEN")
+CHAT_ID = os.environ.get("CHAT_ID")
 
 BORSANIN_ACILISI = 8 * 60 + 50
 BORSANIN_KAPANISI = 18 * 60
@@ -124,4 +124,5 @@ def kontrol_et():
 
 # ================= BAŞLAT =================
 if __name__ == "__main__":
+
     kontrol_et()

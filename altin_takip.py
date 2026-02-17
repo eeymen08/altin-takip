@@ -79,9 +79,9 @@ def kontrol_et():
     now = datetime.now()
     dakika = now.hour * 60 + now.minute
 
-    if not (BORSANIN_ACILISI <= dakika < BORSANIN_KAPANISI):
-        log_yaz("Borsa kapalı.")
-        return
+    #if not (BORSANIN_ACILISI <= dakika < BORSANIN_KAPANISI):
+        #log_yaz("Borsa kapalı.")
+      #  return
 
     fiyat = gram_altin_getir()
     if fiyat is None:
@@ -126,3 +126,4 @@ def kontrol_et():
 if __name__ == "__main__":
 
     kontrol_et()
+

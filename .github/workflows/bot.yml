@@ -2,7 +2,7 @@ name: AltinTakip
 
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "*/5 * * * *"  # Her 5 dakikada bir çalışacak
   workflow_dispatch:
 
 jobs:
@@ -20,6 +20,7 @@ jobs:
 
       - name: Paketleri yükle
         run: |
+          python -m pip install --upgrade pip
           pip install requests beautifulsoup4
 
       - name: Botu çalıştır

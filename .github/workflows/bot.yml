@@ -2,7 +2,7 @@ name: AltinTakip
 
 on:
   schedule:
-    - cron: "*/5 * * * *"  # Her 5 dakikada bir çalışacak
+    - cron: "*/1 * * * *"  # Her 5 dakikada bir çalışacak
   workflow_dispatch:
 
 jobs:
